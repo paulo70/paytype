@@ -7,23 +7,20 @@ import Loading from '../../components/Loading'
 
 import { IMoviesProps } from '../../interface/MoviesProps'
 
-
 import { SearchContext } from '../../contexts/Search';
+import { API_URL, API_KEY } from '../../services/url'
 
 
 const Movies = () => {
-  const API_URL = "https://api.themoviedb.org/3/";
-  const API_KEY = "e9da1b9b1bf2935bf963f9c98fd51e01";
-
-
   const { value, currentPage, setCurrentPage, } = useContext(SearchContext)
   const [data, setData] = useState<IMoviesProps[]>([])
   const [disabled, setDisabled] = useState(true)
+  const [loading, setLoading] = useState(true)
   const [counts, setCounts] = useState({
     total_pages: 14,
     total_results: 262
   });
-  const [loading, setLoading] = useState(true)
+
   const upcoming = `${API_URL}movie/upcoming?api_key=${API_KEY}&language=en-US&page=${currentPage}`
   const searching = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${encodeURIComponent(
     value
@@ -32,7 +29,6 @@ const Movies = () => {
   const hasPage = counts.total_pages > currentPage;
 
   const loadMoreItems = () => {
-    console.log('oi')
     if (hasPage) setCurrentPage((page) => page + 1)
   };
 
@@ -68,6 +64,7 @@ const Movies = () => {
       <Results>
         {value ? `Resultados para: ${value}` : "Últimos lançamentos"}
       </Results>
+
       <Box>
         {
           data.map(movies => (
@@ -75,9 +72,11 @@ const Movies = () => {
           ))
         }
       </Box>
+
       <Box>
         {loading && <Loading />}
       </Box>
+
       <Box>
         {hasPage ? (
           <Button onClick={loadMoreItems} disabled={disabled}>

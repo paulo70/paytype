@@ -23,6 +23,7 @@ export const CardBody = styled.div`
 
     p{
       padding: 15px 10px 0;
+      margin: 0;
       
       color:#6C6667;
       font-weight: bold;

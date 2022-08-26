@@ -3,7 +3,7 @@ import { IButtonProps } from '../../interface/ButtonProps'
 
 const LoadMore: React.FC<IButtonProps> = ({ children, onClick, disabled }) => {
   return (
-    <Button type="button" onClick={() => onClick} disabled={disabled}>
+    <Button type="button" onClick={onClick} disabled={disabled}>
       {children}
     </Button>
   )

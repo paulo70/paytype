@@ -22,6 +22,10 @@ export const ContentHeader = styled.div`
 export const Brand = styled(Icon)`
   width: 150px;
   height: 50px;
+
+  @media(max-width: 768px){
+    display: none;
+  }
 `
 
 export const Span = styled.span`
@@ -29,4 +33,9 @@ export const Span = styled.span`
   font-size: 20px;
   margin-top: 5px;
   text-transform: uppercase;
+
+  @media(max-width: 768px){
+    display: none;
+  }
+
 `

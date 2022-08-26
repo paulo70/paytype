@@ -24,5 +24,7 @@ export const Search = styled.input`
 
   @media (max-width: 768px) {
     margin-right: 10px;
+    margin-left: 10px;
+    width: 100%;
 }
 `
