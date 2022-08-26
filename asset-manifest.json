@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/paytype.git/static/js/main.46c61bc0.js",
+    "static/media/Quero2Pay_logo.svg": "/paytype.git/static/media/Quero2Pay_logo.d5d5ee9ff20ec59c3880a28b6642dba6.svg",
+    "index.html": "/paytype.git/index.html",
+    "main.46c61bc0.js.map": "/paytype.git/static/js/main.46c61bc0.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.46c61bc0.js"
+  ]
+}
