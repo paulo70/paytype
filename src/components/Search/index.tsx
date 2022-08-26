@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { SearchContext } from "../contexts/Search"
+import { SearchContext } from "../../contexts/Search"
 import { Search } from "./style"
 
 const Input = () => {

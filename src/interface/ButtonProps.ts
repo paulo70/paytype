@@ -1,7 +1,7 @@
-import { TCommonProps } from './ChildCommon'
+import { ReactNode } from "react";
 
 export interface IButtonProps {
-  children: TCommonProps,
+  children: ReactNode,
   disabled: boolean,
-  onClick: React.MouseEvent<HTMLElement>
+  onClick: React.MouseEventHandler<HTMLElement>
 }

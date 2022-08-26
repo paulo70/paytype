@@ -1,10 +1,18 @@
 import React from 'react';
 import Container from './components/Wrapper'
 import Header from './components/Header';
+import Movies from './Pages/Movies';
+
+import SearchContextProvider from './contexts/Search'
 
 function App() {
   return (
-    <Header />
+    <SearchContextProvider>
+      <Header />
+      <Container>
+        <Movies />
+      </Container>
+    </SearchContextProvider>
   )
 }
 
