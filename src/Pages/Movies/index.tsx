@@ -5,7 +5,7 @@ import Button from '../../components/Button'
 import Results from '../../components/Results'
 import Loading from '../../components/Loading'
 
-import { IMoviesProps } from '../../interface/MoviesProps'
+import { IMoviesProps } from '../../interfaces/MoviesProps'
 
 import { SearchContext } from '../../contexts/Search';
 import { API_URL, API_KEY } from '../../services/url'

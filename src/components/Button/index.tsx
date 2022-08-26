@@ -1,5 +1,5 @@
 import { Button } from "./style";
-import { IButtonProps } from '../../interface/ButtonProps'
+import { IButtonProps } from '../../interfaces/ButtonProps'
 
 const LoadMore: React.FC<IButtonProps> = ({ children, onClick, disabled }) => {
   return (

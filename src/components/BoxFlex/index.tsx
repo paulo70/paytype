@@ -1,5 +1,5 @@
 import { Div } from './style'
-import { TCommonProps } from '../../interface/ChildCommonProps'
+import { TCommonProps } from '../../interfaces/ChildCommonProps'
 
 const Box: React.FC<TCommonProps> = ({ children }) => {
   return (

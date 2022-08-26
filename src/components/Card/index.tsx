@@ -1,5 +1,5 @@
 import { CardWrapper, CardBody } from "./style"
-import { TCommonProps } from '../../interface/ChildCommonProps'
+import { TCommonProps } from '../../interfaces/ChildCommonProps'
 
 const Card: React.FC<TCommonProps> = ({ children }) => {
   return (

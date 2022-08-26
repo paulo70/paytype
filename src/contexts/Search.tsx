@@ -1,6 +1,6 @@
 import React, { createContext, ReactNode, useState } from "react";
-import { SearchContextProps } from '../interface/SearchProps'
-import { TCommonProps } from '../interface/ChildCommonProps'
+import { SearchContextProps } from '../interfaces/SearchProps'
+import { TCommonProps } from '../interfaces/ChildCommonProps'
 
 export const SearchContext = createContext({} as SearchContextProps)
 SearchContext.displayName = "Searching"

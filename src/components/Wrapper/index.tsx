@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react"
 import { Container } from "./style"
-import { TCommonProps } from '../../interface/ChildCommonProps'
+import { TCommonProps } from '../../interfaces/ChildCommonProps'
 
 const Wrapper: React.FC<TCommonProps> = ({ children }) => {
   return (

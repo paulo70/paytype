@@ -1,5 +1,5 @@
 import { BoxResults } from "./style"
-import { TCommonProps } from '../../interface/ChildCommonProps'
+import { TCommonProps } from '../../interfaces/ChildCommonProps'
 
 const Results: React.FC<TCommonProps> = ({ children }) => {
   return (

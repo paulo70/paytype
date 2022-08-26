@@ -1,7 +1,7 @@
 import { ReactHTMLElement, ReactNode } from "react"
 import Card from "../../components/Card"
 
-import { IMoviesProps } from '../../interface/MoviesProps'
+import { IMoviesProps } from '../../interfaces/MoviesProps'
 
 const ListMovies: React.FC<IMoviesProps> = ({
   poster_path,
