@@ -9,10 +9,9 @@ export const BoxResults = styled.div`
   color: #0054FF;
   font-size: 20px;
   border-bottom: 1px solid #0054FF;
-
+  margin-top: ${props => props.margin ? props.margin : ''};
   &{
     h3{
-      margin-top: 90px;
       margin-left: 20px;
       margin-bottom: 10px;
     }

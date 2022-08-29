@@ -1,5 +1,8 @@
 import { ReactHTMLElement, ReactNode } from "react"
+import { useNavigate } from "react-router-dom"
+
 import Card from "../../components/Card"
+import Button from '../../components/Button'
 
 import { IMoviesProps } from '../../interfaces/MoviesProps'
 
@@ -9,6 +12,14 @@ const ListMovies: React.FC<IMoviesProps> = ({
   title,
   release_date,
   overview }) => {
+
+  const navigate = useNavigate()
+  const handleDetails = (id: string) => {
+
+    navigate({
+      pathname: `/details/${id}`
+    })
+  }
 
   return (
     <>
@@ -20,6 +31,7 @@ const ListMovies: React.FC<IMoviesProps> = ({
         <p>Title: {title}</p>
         <p>Release: {release_date}</p>
         <p>Overview: {overview}</p>
+        <Button onClick={() => handleDetails(id)} disabled={false}>ver mais</Button>
       </Card>
     </>
   )

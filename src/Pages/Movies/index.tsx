@@ -61,7 +61,7 @@ const Movies = () => {
 
   return (
     <>
-      <Results>
+      <Results margin='160px'>
         {value ? `Resultados para: ${value}` : "Últimos lançamentos"}
       </Results>
 
@@ -83,7 +83,7 @@ const Movies = () => {
             Load More
           </Button>
         ) : (
-          <Results>
+          <Results margin='30px'>
             Mostrando {counts.total_results} de {counts.total_results} Movies
           </Results>
         )}

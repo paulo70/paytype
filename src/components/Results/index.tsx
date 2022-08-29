@@ -1,9 +1,10 @@
 import { BoxResults } from "./style"
-import { TCommonProps } from '../../interfaces/ChildCommonProps'
 
-const Results: React.FC<TCommonProps> = ({ children }) => {
+import { IResultsProps } from "../../interfaces/ResultsProps"
+
+const Results: React.FC<IResultsProps> = ({ children, margin }) => {
   return (
-    <BoxResults>
+    <BoxResults margin={margin}>
       <h3>{children}</h3>
     </BoxResults>
   )
